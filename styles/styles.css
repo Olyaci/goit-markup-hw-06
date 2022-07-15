@@ -911,12 +911,13 @@ address {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--main-color);
-  margin-left: 5px;
+  margin-left: 8px;
 }
 
 .instruction {
   text-decoration: underline var(--accent-color);
   color: var(--accent-color);
+  margin-left: 3px;
 }
 
 .send-btn {
