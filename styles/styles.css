@@ -512,6 +512,7 @@ nav > ul > li > a > svg {
 
 .box-prj {
   background: var(--primary-background);
+  cursor: pointer;
   transition: 250ms cubic-bezier(0.4,0,0.2,1);
 }
 
