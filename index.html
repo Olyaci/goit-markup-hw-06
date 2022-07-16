@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ua">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -195,39 +195,39 @@
             <div class="sign">
                 <form name="signup" autocomplete="on" novalidate>
                     <label class="signup" for="user-email">Підпишіться на розсилку</label>
-                    <input type="user-email" name="user-email" placeholder="Email" class="user-email"/>
+                    <input type="email" name="email" placeholder="Email" class="user-email"/>
+                    <button type="submit" class="sign-btn">Підписатись<svg width="24" height="24"><use href="images/icons.svg#icon-send"></use></svg></button>
                 </form> 
             </div>
-            <button type="submit" class="sign-btn">Підписатись<svg width="24" height="24"><use href="images/icons.svg#icon-send"></use></svg></button>
         </div>
     </footer>
 
     <div class="backdrop is-hidden" data-modal>
         <div class="modalwindow">
             <button class="modalwindow-close-button" type="button" data-modal-close><svg width="11" height="11"><use href="./images/icons.svg#Vector"></use></svg></button>
-            <h2 class="modal-title">
+            <p class="modal-title">
                 Залиште свої дані, ми вам зателефонуємо
-            </h2>
+            </p>
             <div class="modal-container">
                 <form class="form" name="first-form" autocomplete="on" novalidate>
                     <div class="form-field">
                         <label class="form-field-label" for="user-name">Ім'я</label>
                         <div class="form-field-inner">
-                            <input class="form-field-input" id="user-name" type="text" name="user-name"/>
+                            <input class="form-field-input" id="user-name" type="text" name="name"/>
                             <svg  class="form-field-icon" width="12" height="12"><use href="./images/icons.svg#Vector-1"></use></svg>
                         </div>
                     </div>
                     <div class="form-field">
                         <label class="form-field-label" for="user-phone">Телефон</label>
                         <div class="form-field-inner">
-                            <input class="form-field-input" id="user-phone" type="user-phone" name="user-phone"/> 
+                            <input class="form-field-input" id="user-phone" type="tel" name="phone_number"/> 
                             <svg class="form-field-icon" width="12" height="12"><use href="./images/icons.svg#Vector-2"></use></svg>
                         </div>
                     </div>
                     <div class="form-field">
                         <label class="form-field-label" for="user-email">Пошта</label> 
                         <div class="form-field-inner">
-                            <input class="form-field-input" id="user-email" type="user-email" name="user-email"/>
+                            <input class="form-field-input" id="user-email" type="email" name="email"/>
                             <svg class="form-field-icon" width="12" height="12"><use href="./images/icons.svg#Vector-3"></use></svg>
                         </div>
                     </div>
@@ -235,15 +235,16 @@
                         <label class="form-field-label" for="user-comment">Коментар</label>
                         <textarea class="form-field-textarea" name="user-comment" id="user-comment" rows="10" placeholder="Введіть текст"></textarea> 
                     </div>
+                    <div class="agreement">
+                        <div>
+                            <input class="checkbox" id="terms-condition" type="checkbox" name="terms-condition"/>
+                            <span class="icon"><svg width="15" height="15"><use href="./images/icons.svg#icon-check"></use></svg></span>
+                        </div>
+                        <label class="terms-condition" for="terms-condition">Погоджуюся з розсилкою та приймаю <a href="#" class="instruction">Умови договору</a></label>
+                    </div> 
+                    <button type="submit" class="send-btn">Відправити</button>
                 </form>
             </div>
-            <div class="agreement">
-                <input class="checkbox" id="terms-condition" type="checkbox" name="terms-condition"/>
-                <span class="icon"><svg width="15" height="15"><use href="./images/icons.svg#icon-check"></use></svg></span>
-                <label class="terms-condition" for="terms-condition">Погоджуюся з розсилкою та приймаю <a href="#" class="instruction">Умови договору</a></label>
-            </div>
-                
-            <button type="submit" class="send-btn">Відправити</button>
         </div>
     </div>
 
